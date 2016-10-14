@@ -38,4 +38,9 @@
 -(void)setSosialBtn;
 -(BOOL)openURL:(NSURL *)url;
 -(void)startTracking;
+
+//楽天用
+-(void)showAlertWithTitle:(NSString*)title message:(NSString *)message cancelBtnTitle:(NSString*)cancelBtnTitle otherBtnTitle:(NSString*)otherBtnTitle;
+-(void)cancelBtnAction;
+
 @end

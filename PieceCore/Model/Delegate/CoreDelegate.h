@@ -43,6 +43,7 @@
 @property (nonatomic) bool isCheckIn;
 
 - (NSMutableArray *)getTabbarDataList;
+-(void)splashAction;
 -(void)setConfig;
 -(void)setThemeColor;
 -(void)setTabbarNumberWithVc:(BaseViewController *)vc index:(int)index;

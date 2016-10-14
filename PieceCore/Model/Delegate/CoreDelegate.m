@@ -37,11 +37,13 @@
     [self setThemeColor];
     [self setNavibarTitleAttributes];
     [self registDeviceToken];
-    [self setTabBarController];
+    //[self setTabBarController];
     [self splashIntarval];
     [self moveScreenWithLaunchOptions:launchOptions];
     [self LocalNotificationUpdate:launchOptions];
     [self paypal];
+    
+    [self splashAction];
     
     [[AFNetworkReachabilityManager sharedManager] startMonitoring];
     return YES;
