@@ -29,6 +29,7 @@
     data.title = [dec valueForKey:@"title"];
     data.type = [dec valueForKey:@"type"];
     data.typeId = [dec valueForKey:@"id"];
+    data.datatime = [dec valueForKey:@"delivered_datetime"];
     return data;
 }
 @end

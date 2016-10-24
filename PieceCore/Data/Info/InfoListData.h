@@ -12,5 +12,5 @@
 @property (nonatomic,strong) NSString *typeId;
 @property (nonatomic,strong) NSString *news_id;
 @property (nonatomic,strong) NSString *text;
-
+@property (nonatomic,strong) NSString *datatime;
 @end
