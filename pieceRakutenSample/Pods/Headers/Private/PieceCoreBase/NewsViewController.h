@@ -1,0 +1,1 @@
+../../../PieceCoreBase/PieceCore/ViewController/Info/NewsViewController.h

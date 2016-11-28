@@ -1,0 +1,44 @@
+{
+  "name": "PieceCoreBase",
+  "version": "1.0.1",
+  "license": {
+    "type": "GPL v3",
+    "file": "LICENSE"
+  },
+  "summary": "This is piece library for iOS.",
+  "homepage": "https://jokapi.jp",
+  "authors": "jokerpiece",
+  "source": {
+    "git": "https://github.com/jokerpiece/ios_piececore_basekit.git",
+    "tag": "1.0.1"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "PieceCore/**/*.{h,m}",
+  "resources": [
+    "PieceCore/Resources/**/*.{png, jpg,gif}",
+    "PieceCore/**/*.xib"
+  ],
+  "frameworks": [
+    "IOKit",
+    "QuartzCore"
+  ],
+  "dependencies": {
+    "AFNetworking": [
+      "2.6.3"
+    ],
+    "UIActivityIndicator-for-SDWebImage": [
+
+    ],
+    "UIColor+MLPFlatColors": [
+
+    ],
+    "SVProgressHUD": [
+      "~> 1.0"
+    ],
+    "Google/Analytics": [
+      "~> 1.0.0"
+    ]
+  }
+}

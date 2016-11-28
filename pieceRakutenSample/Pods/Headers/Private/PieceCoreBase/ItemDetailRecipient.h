@@ -1,0 +1,1 @@
+../../../PieceCoreBase/PieceCore/Model/API/ItemDetailRecipient.h

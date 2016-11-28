@@ -1,0 +1,11 @@
+platform:ios, 9.0
+target "pieceRakutenSample" do 
+pod 'UIActivityIndicator-for-SDWebImage'
+pod 'AFNetworking', '2.6.3'
+pod 'Reachability'
+pod 'UIColor+MLPFlatColors'
+pod 'SVProgressHUD', '~> 1.0'
+pod 'Google/Analytics', '~> 1.0.0'
+pod 'PieceCoreBase’, :git => 'https://github.com/jokerpiece/ios_piececore_basekit.git'
+end
+

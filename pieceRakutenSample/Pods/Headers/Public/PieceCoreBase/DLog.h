@@ -1,0 +1,1 @@
+../../../PieceCoreBase/PieceCore/Model/Log/DLog.h

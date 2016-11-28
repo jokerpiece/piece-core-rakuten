@@ -1,0 +1,1 @@
+../../../PieceCoreBase/PieceCore/Data/Item/ItemDetailData.h
