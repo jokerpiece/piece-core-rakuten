@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
     s.source = { :git => "https://github.com/jokerpiece/piece-core-rakuten.git", :tag => "#{s.version}"}
     s.platform  = :ios, "9.0"
     s.source_files = "PieceRakutenCore/**/*.{h,m}"
-    s.resources = "PieceRakutenCore/Resources/**/*.{png, jpg,gif}","PieceRakutenCore/**/*.xib"
+    s.resources = "PieceRakutenCore/img/**/*.{png, jpg,gif}","PieceRakutenCore/**/*.xib"
 #    s.frameworks = 'IOKit', 'QuartzCore'
 #    s.dependency 'AFNetworking', '2.6.3'
 #    s.dependency 'UIActivityIndicator-for-SDWebImage'
