@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2433CC911E07C4820035199E /* RakutenTabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2433CC901E07C4820035199E /* RakutenTabbarViewController.m */; };
 		370561931ACE2717002E7F1B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 370561921ACE2717002E7F1B /* MapKit.framework */; };
 		370561951ACE2A00002E7F1B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 370561941ACE2A00002E7F1B /* CoreLocation.framework */; };
 		3756A03F1DE6C70900EBBD4C /* RakutenCoreDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3756A03E1DE6C70900EBBD4C /* RakutenCoreDelegate.m */; };
@@ -64,6 +65,8 @@
 
 /* Begin PBXFileReference section */
 		0B2EB3020702E5D1A5D8492F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		2433CC8F1E07C4820035199E /* RakutenTabbarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RakutenTabbarViewController.h; sourceTree = "<group>"; };
+		2433CC901E07C4820035199E /* RakutenTabbarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RakutenTabbarViewController.m; sourceTree = "<group>"; };
 		370561921ACE2717002E7F1B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		370561941ACE2A00002E7F1B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		3756A03D1DE6C70900EBBD4C /* RakutenCoreDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RakutenCoreDelegate.h; sourceTree = "<group>"; };
@@ -185,6 +188,8 @@
 				3756A0481DE6CED400EBBD4C /* RakutenInfoViewController.xib */,
 				37888E701DE6EBA7008A774C /* PieceRakutenConfig.h */,
 				37888E711DE6EBA7008A774C /* PieceRakutenConfig.m */,
+				2433CC8F1E07C4820035199E /* RakutenTabbarViewController.h */,
+				2433CC901E07C4820035199E /* RakutenTabbarViewController.m */,
 			);
 			name = PieceRakutenCore;
 			path = ../PieceRakutenCore;
@@ -526,6 +531,7 @@
 				37888E721DE6EBA7008A774C /* PieceRakutenConfig.m in Sources */,
 				37E3EA5B1AA45F6800EA7CB9 /* AppDelegate.m in Sources */,
 				3756A04A1DE6CED400EBBD4C /* RakutenWebViewController.m in Sources */,
+				2433CC911E07C4820035199E /* RakutenTabbarViewController.m in Sources */,
 				37E3EA581AA45F6800EA7CB9 /* main.m in Sources */,
 				3756A04D1DE6CED400EBBD4C /* RakutenInfoViewController.m in Sources */,
 			);

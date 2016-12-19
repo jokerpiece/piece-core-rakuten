@@ -10,6 +10,7 @@
 #import "RakutenWebViewController.h"
 #import "RakutenInfoViewController.h"
 #import "RakutenCouponViewController.h"
+#import "RakutenTabbarViewController.h"
 
 
 @implementation RakutenCoreDelegate
@@ -142,7 +143,7 @@
     UIImage *unselectedImage = [UIImage imageNamed:@"select.png"];
     
     self.window =  [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.tabBarController = [[TabbarViewController alloc] init];
+    self.tabBarController = [[RakutenTabbarViewController alloc] init];
     NSMutableArray *navigationControllerList = [NSMutableArray array];
     NSMutableArray *tabbarDataList = [self getTabbarDataList];
     [[UITabBar appearance] setSelectionIndicatorImage:unselectedImage];

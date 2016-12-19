@@ -7,6 +7,7 @@
 //
 
 #import "RakutenWebViewController.h"
+#import "PieceRakutenConfig.h"
 
 
 static const int *flag=0;
@@ -76,7 +77,19 @@ static const int *flag=0;
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    [self.webView reload];
+    
+    if ([self.title isEqualToString:@"トップ"]){
+        NSURL *url = [NSURL URLWithString:[PieceRakutenConfig ShopUrl]];
+        NSURLRequest *request = [NSURLRequest requestWithURL:url];
+        [self.webView loadRequest:request];
+    }else if ([self.title isEqualToString:@"買い物カゴ"]){
+        NSURL *url = [NSURL URLWithString:@"https://basket.step.rakuten.co.jp/rms/mall/bs/cartall/"];
+        NSURLRequest *request = [NSURLRequest requestWithURL:url];
+        [self.webView loadRequest:request];
+    }else{
+        [self.webView reload];
+    }
+
 }
 
 - (void)didReceiveMemoryWarning {
