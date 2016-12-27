@@ -278,7 +278,11 @@ static const NSString *webviewurl =nil;
     self.scroll.userInteractionEnabled = YES;
     self.scroll.delegate = self;
     [self.scroll setContentSize:CGSizeMake((self.pageSize * width), height)];
-    self.scroll.frame = CGRectMake(0, 0, width, height);
+    
+    //セグメント非表示(楽天のみ)
+    self.selectTab.hidden = YES;
+    //セグメント分の高さを引くので最初のy軸はマイナス位置になる
+    self.scroll.frame = CGRectMake(0, -self.selectTab.frame.size.height, width, height);
     
     int i=0;
     int currentPage = 0;
