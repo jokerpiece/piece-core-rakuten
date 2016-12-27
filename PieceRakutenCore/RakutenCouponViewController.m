@@ -32,7 +32,8 @@ static const NSString *webviewurl =nil;
     //        self.navigationItem.rightBarButtonItem = barbtn;
     //    }
     
-    
+    //セグメント非表示(楽天のみ)
+    self.selectTab.hidden = YES;
     
 }
 
@@ -279,8 +280,6 @@ static const NSString *webviewurl =nil;
     self.scroll.delegate = self;
     [self.scroll setContentSize:CGSizeMake((self.pageSize * width), height)];
     
-    //セグメント非表示(楽天のみ)
-    self.selectTab.hidden = YES;
     //セグメント分の高さを引くので最初のy軸はマイナス位置になる
     self.scroll.frame = CGRectMake(0, -self.selectTab.frame.size.height, width, height);
     
