@@ -92,6 +92,23 @@ static const int *flag=0;
 
 }
 
+//Goole AnalythicsがON時にアクティブページ名を変更
+-(void)startTracking{
+    if([PieceCoreConfig isGoogleAnalitics]){
+        if ([self.title isEqualToString:@"トップ"]){
+            id<GAITracker> tracker = [GAI sharedInstance].defaultTracker;
+            [tracker set:kGAIScreenName value:@"TOP"];
+            [tracker send:[[GAIDictionaryBuilder createScreenView] build]];
+        }
+        
+        if ([self.title isEqualToString:@"買い物カゴ"]){
+            id<GAITracker> tracker = [GAI sharedInstance].defaultTracker;
+            [tracker set:kGAIScreenName value:@"CART"];
+            [tracker send:[[GAIDictionaryBuilder createScreenView] build]];
+        }
+    }
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
