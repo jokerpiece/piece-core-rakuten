@@ -13,11 +13,15 @@
 #import "RakutenTabbarViewController.h"
 
 
-@implementation RakutenCoreDelegate
+@implementation RakutenCoreDelegate{
+    NSDictionary *launchOption;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     [AFNetworkActivityIndicatorManager sharedManager].enabled = YES;
+    
+    launchOption = launchOptions;
     
     [self setConfig];
     [self setGoogleAnalitics];
@@ -27,7 +31,6 @@
     [self setNavibarTitleAttributes];
     [self registDeviceToken];
     [self splashIntarval];
-    [self moveScreenWithLaunchOptions:launchOptions];
     [self splashAction];
     
     [[AFNetworkReachabilityManager sharedManager] startMonitoring];
@@ -71,6 +74,7 @@
                                                                    if(!self.isTapSplash){
                                                                        
                                                                        [self setTabBarController];
+                                                                       [self moveScreenWithLaunchOptions:launchOption];
                                                                    }
                                                                }];
                                               
@@ -92,6 +96,7 @@
     self.isTapSplash = YES;
     //[layer removeAllAnimations];
     [self setTabBarController];
+    [self moveScreenWithLaunchOptions:launchOption];
 }
 
 - (NSMutableArray *)getTabbarDataList
